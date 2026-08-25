@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmartPark Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================================ LOGIN ============================================================ -->
+<div id="login-screen" class="screen active">
+  <div class="login-hero">
+    <div class="lane-art"><div class="line" style="left:30%;"></div><div class="line" style="left:50%;"></div><div class="line" style="left:70%;"></div></div>
+    <svg class="garage-art" viewBox="0 0 380 320" xmlns="http://www.w3.org/2000/svg">
+  <rect x="30" y="40" width="140" height="250" rx="6" fill="rgba(255,255,255,.08)"/>
+  <rect x="40" y="60" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="61" y="60" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="82" y="60" width="14" height="14" rx="2" fill="rgba(255,255,255,.25)"/>
+      <rect x="103" y="60" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="124" y="60" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="40" y="81" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="61" y="81" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="82" y="81" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="103" y="81" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="124" y="81" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="40" y="102" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="61" y="102" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="82" y="102" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="103" y="102" width="14" height="14" rx="2" fill="#F5A524"/>
+      <rect x="124" y="102" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="40" y="123" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="61" y="123" width="14" height="14" rx="2" fill="rgba(255,255,255,.25)"/>
+      <rect x="82" y="123" width="14" height="14" rx="2" fill="#F2545B"/>
+      <rect x="103" y="123" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="124" y="123" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="40" y="144" width="14" height="14" rx="2" fill="#F2545B"/>
+      <rect x="61" y="144" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="82" y="144" width="14" height="14" rx="2" fill="#F5A524"/>
+      <rect x="103" y="144" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="124" y="144" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="40" y="165" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="61" y="165" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="82" y="165" width="14" height="14" rx="2" fill="#F5A524"/>
+      <rect x="103" y="165" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="124" y="165" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="40" y="186" width="14" height="14" rx="2" fill="rgba(255,255,255,.25)"/>
+      <rect x="61" y="186" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="82" y="186" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="103" y="186" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="124" y="186" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="40" y="207" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="61" y="207" width="14" height="14" rx="2" fill="rgba(255,255,255,.25)"/>
+      <rect x="82" y="207" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="103" y="207" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="124" y="207" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="40" y="228" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="61" y="228" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="82" y="228" width="14" height="14" rx="2" fill="rgba(255,255,255,.25)"/>
+      <rect x="103" y="228" width="14" height="14" rx="2" fill="rgba(255,255,255,.25)"/>
+      <rect x="124" y="228" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+  <rect x="200" y="95" width="120" height="195" rx="6" fill="rgba(255,255,255,.06)"/>
+  <rect x="210" y="110" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="231" y="110" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="252" y="110" width="14" height="14" rx="2" fill="#F5A524"/>
+      <rect x="273" y="110" width="14" height="14" rx="2" fill="rgba(255,255,255,.25)"/>
+      <rect x="210" y="131" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="231" y="131" width="14" height="14" rx="2" fill="#F2545B"/>
+      <rect x="252" y="131" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="273" y="131" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="210" y="152" width="14" height="14" rx="2" fill="rgba(255,255,255,.25)"/>
+      <rect x="231" y="152" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="252" y="152" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="273" y="152" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="210" y="173" width="14" height="14" rx="2" fill="rgba(255,255,255,.25)"/>
+      <rect x="231" y="173" width="14" height="14" rx="2" fill="rgba(255,255,255,.25)"/>
+      <rect x="252" y="173" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="273" y="173" width="14" height="14" rx="2" fill="#F5A524"/>
+      <rect x="210" y="194" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="231" y="194" width="14" height="14" rx="2" fill="rgba(255,255,255,.25)"/>
+      <rect x="252" y="194" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="273" y="194" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="210" y="215" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+      <rect x="231" y="215" width="14" height="14" rx="2" fill="#F5A524"/>
+      <rect x="252" y="215" width="14" height="14" rx="2" fill="#F2545B"/>
+      <rect x="273" y="215" width="14" height="14" rx="2" fill="rgba(255,255,255,.85)"/>
+  <rect x="0" y="285" width="380" height="10" fill="rgba(255,255,255,.14)"/>
+  <rect x="0" y="292" width="380" height="3" fill="rgba(255,255,255,.35)" stroke-dasharray="14 10"/>
+</svg>
+    <svg class="bike-art" viewBox="0 0 260 170" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="140" width="260" height="6" rx="3" fill="rgba(255,255,255,.14)"/>
+      <path d="M46,140 L46,98 A16,16 0 0 1 78,98 L78,140" fill="none" stroke="rgba(255,255,255,.28)" stroke-width="6"/>
+      <path d="M138,140 L138,98 A16,16 0 0 1 170,98 L170,140" fill="none" stroke="rgba(255,255,255,.28)" stroke-width="6"/>
+      <g transform="translate(14,36)" stroke="rgba(255,255,255,.92)" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="16" cy="62" r="17"/>
+        <circle cx="78" cy="62" r="17"/>
+        <path d="M16,62 L46,22 L78,62 M46,22 L54,22 M16,62 L54,22"/>
+        <path d="M54,22 L54,34"/>
+        <circle cx="54" cy="21" r="2.2" fill="rgba(255,255,255,.92)" stroke="none"/>
+        <circle cx="46" cy="22" r="2" fill="#F5A524" stroke="none"/>
+      </g>
+      <g transform="translate(112,40) scale(0.9)" stroke="rgba(255,255,255,.75)" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="16" cy="62" r="17"/>
+        <circle cx="78" cy="62" r="17"/>
+        <path d="M16,62 L46,22 L78,62 M46,22 L54,22 M16,62 L54,22"/>
+        <path d="M54,22 L54,34"/>
+        <circle cx="54" cy="21" r="2.2" fill="rgba(255,255,255,.75)" stroke="none"/>
+        <circle cx="46" cy="22" r="2" fill="#F2545B" stroke="none"/>
+      </g>
+    </svg>
+    <div class="badge-chip">🅿️ Parking Intelligence Platform</div>
+    <div>
+      <h1>Smart Parking Slot Prediction &amp; Congestion Intelligence</h1>
+      <p class="sub">A real-time control room for occupancy monitoring, ML-driven demand forecasting, and automated pricing across every zone.</p>
+      <div class="hero-stats">
+        <div class="stat"><b>3</b><span>Zones live</span></div>
+        <div class="stat"><b>350</b><span>Slots tracked</span></div>
+        <div class="stat"><b>87.1%</b><span>Model R² score</span></div>
+      </div>
+    </div>
+    <div class="float-card c1"><span class="signal red"></span><div><b>91% Occupied</b>Zone B · Shopping Mall</div></div>
+    <div class="float-card c2"><span class="signal green"></span><div><b>52% Occupied</b>Zone C · Metro Transit</div></div>
+    <div class="float-card c3"><span class="signal amber"></span><div><b>₹1,02,450</b>Revenue collected today</div></div>
+    <div class="float-card c4"><span class="signal blue"></span><div><b>26% Two-Wheelers</b>Share of fleet traffic today</div></div>
+  </div>
+  <div class="login-right">
+    <div class="login-box">
+      <div class="login-mark">SP</div>
+      <h2>Welcome back</h2>
+      <p class="desc">Sign in with your operator credentials to enter the analytics dashboard.</p>
+      <div class="err-msg" id="login-err">Incorrect username or password. Try the demo credentials below.</div>
+      <div class="field"><label>Username</label><input type="text" id="login-user" placeholder="operator id" autocomplete="username"></div>
+      <div class="field"><label>Password</label><input type="password" id="login-pass" placeholder="••••••••" autocomplete="current-password"></div>
+      <button class="btn-primary" style="background:linear-gradient(135deg,#7C3AED,#4C1D95);" onclick="doLogin()">Enter Analytics Dashboard →</button>
+      <p class="demo-hint">Demo: <b>admin</b> / <b>admin123</b></p>
+      <p class="stack-tag">Tech Stack: Python Backend · Random Forest · Power BI</p>
+    </div>
+  </div>
+</div>
+
+<div id="transition-veil"><div class="spin"></div><div class="tv-text">Opening SmartPark Analytics Hub…</div></div>
+
+<!-- ============================================================ DASHBOARD ============================================================ -->
+<div id="dash-screen" class="screen">
+  <div class="app-shell">
+
+    <aside class="sidebar">
+      <div class="sb-brand"><div class="mark">P</div><div class="txt"><b>SmartPark Analytics</b><span>Parking Intelligence System</span></div></div>
+      <div class="sb-status"><span class="dot"></span>Python · Random Forest — Live</div>
+      <div class="sb-nav" id="sb-nav">
+        <div class="sb-group-label">Analytics</div>
+        <div class="sb-item active" data-p="1" onclick="showPage(1)"><span class="ic">📡</span>Live Slots</div>
+        <div class="sb-item" data-p="2" onclick="showPage(2)"><span class="ic">🤖</span>ML Predictor</div>
+        <div class="sb-item" data-p="3" onclick="showPage(3)"><span class="ic">📈</span>Demand Curve</div>
+        <div class="sb-item" data-p="4" onclick="showPage(4)"><span class="ic">🗄️</span>SQL Engine</div>
+        <div class="sb-item" data-p="5" onclick="showPage(5)"><span class="ic">🧭</span>Decision Hub</div>
+        <div class="sb-group-label">Zone Portals</div>
+        <div class="sb-item" data-p="6" onclick="showPage(6)"><span class="ic" style="background:var(--blue-600)">A</span>Zone A Console</div>
+        <div class="sb-item" data-p="7" onclick="showPage(7)"><span class="ic" style="background:var(--red)">B</span>Zone B Console</div>
+        <div class="sb-item" data-p="8" onclick="showPage(8)"><span class="ic" style="background:var(--green)">C</span>Zone C Console</div>
+      </div>
+      <div class="sb-foot"><div class="av">A</div><div class="who"><b>admin</b><span>Analyst</span></div><div class="exit" onclick="doLogout()">Exit</div></div>
+    </aside>
+
+    <div class="main-area">
+      <div class="topbar-new">
+        <span class="page-pill" id="page-pill">PAGE 1/8</span>
+        <h2 id="page-heading">Live Slots</h2>
+        <div class="tb-right">
+          <span class="tb-live"><span class="signal green" style="margin-right:5px;"></span>Live</span>
+          <span class="tb-date" id="tb-date">23 Aug 2026</span>
+        </div>
+      </div>
+
+      <div class="page-body">
+
+        <!-- ================= PAGE 1 : LIVE SLOTS ================= -->
+        <section class="page active" id="page-1">
+          <div class="eyebrow">Module 01</div>
+          <h1 class="mod-title">Real-Time Parking Slot Status</h1>
+          <p class="mod-sub">Live monitoring across 3 metropolitan zones, with a 30-minute predictive layer over each sensor feed so operators see what's coming, not just what's occupied right now.</p>
+
+          <div class="card kpi-strip">
+            <div class="kpi"><b>350</b><span>Total tracked slots</span></div>
+            <div class="kpi"><b>245</b><span>Occupied right now</span></div>
+            <div class="kpi"><b>105</b><span>Free right now</span></div>
+            <div class="kpi"><b>70.0%</b><span>Fleet-wide occupancy</span></div>
+          </div>
+
+          <div class="section-title">Zone-by-zone status</div>
+          <div class="grid3">
+            <div class="card zone-card">
+              <div class="zh"><div><h3>Zone A — Commercial Hub</h3><div class="tag">IT Park &amp; Corporate · 120 slots</div></div><span class="pill amber">78% occupied</span></div>
+              <div class="avail-row"><div><span>Available</span><b style="color:var(--amber)">26</b></div><div style="text-align:right"><span>Capacity</span><b>120</b></div></div>
+              <div class="bar-track"><div class="bar-fill" style="width:78%;background:var(--amber);"></div></div>
+              <svg class="spark" viewBox="0 0 200 38" preserveAspectRatio="none"><polyline points="0,26 20,24 40,20 60,22 80,15 100,12 120,14 140,10 160,8 180,9 200,6" fill="none" stroke="var(--amber)" stroke-width="2"/></svg>
+              <div class="predict-line"><span>Predicted +30 min</span><b>82% · 22 free</b></div>
+            </div>
+            <div class="card zone-card">
+              <div class="zh"><div><h3>Zone B — Shopping Mall</h3><div class="tag">Retail &amp; Cinema Complex · 80 slots</div></div><span class="pill red">91% occupied</span></div>
+              <div class="avail-row"><div><span>Available</span><b style="color:var(--red)">7</b></div><div style="text-align:right"><span>Capacity</span><b>80</b></div></div>
+              <div class="bar-track"><div class="bar-fill" style="width:91%;background:var(--red);"></div></div>
+              <svg class="spark" viewBox="0 0 200 38" preserveAspectRatio="none"><polyline points="0,20 20,18 40,15 60,16 80,10 100,8 120,6 140,5 160,4 180,3 200,2" fill="none" stroke="var(--red)" stroke-width="2"/></svg>
+              <div class="predict-line"><span>Predicted +30 min</span><b style="color:var(--red)">95% · 4 free</b></div>
+            </div>
+            <div class="card zone-card">
+              <div class="zh"><div><h3>Zone C — Metro Transit</h3><div class="tag">Commuter Station · 150 slots</div></div><span class="pill green">52% occupied</span></div>
+              <div class="avail-row"><div><span>Available</span><b style="color:var(--green)">72</b></div><div style="text-align:right"><span>Capacity</span><b>150</b></div></div>
+              <div class="bar-track"><div class="bar-fill" style="width:52%;background:var(--green);"></div></div>
+              <svg class="spark" viewBox="0 0 200 38" preserveAspectRatio="none"><polyline points="0,10 20,12 40,18 60,20 80,22 100,24 120,22 140,20 160,18 180,17 200,16" fill="none" stroke="var(--green)" stroke-width="2"/></svg>
+              <div class="predict-line"><span>Predicted +30 min</span><b>48% · 78 free</b></div>
+            </div>
+          </div>
+
+          <div class="section-title">Fleet-wide slot breakdown</div>
+          <div class="grid-2-1">
+            <div class="card donut-wrap">
+              <div class="donut" style="background:conic-gradient(var(--red) 0% 30%, var(--amber) 30% 57%, var(--green) 57% 88%, var(--surface-2) 88% 100%);">
+                <div class="hole"><b>350</b><span>Total slots</span></div>
+              </div>
+              <div class="donut-legend">
+                <div class="dl-row"><span class="lbl"><span class="sw" style="background:var(--red)"></span>Zone B occupied</span><b>73 (30%)</b></div>
+                <div class="dl-row"><span class="lbl"><span class="sw" style="background:var(--amber)"></span>Zone A occupied</span><b>94 (27%)</b></div>
+                <div class="dl-row"><span class="lbl"><span class="sw" style="background:var(--green)"></span>Zone C occupied</span><b>78 (31%)</b></div>
+                <div class="dl-row"><span class="lbl"><span class="sw" style="background:var(--surface-2)"></span>Free across fleet</span><b>105 (12%)</b></div>
+              </div>
+            </div>
+            <div class="card" style="padding:18px 20px;">
+              <div style="font-size:11.5px;font-weight:700;text-transform:uppercase;color:var(--muted);letter-spacing:.05em;margin-bottom:12px;">Alert summary</div>
+              <div class="alert-box" style="background:var(--red-bg);"><div class="l"><b style="color:var(--red)">🔴 High-risk zones</b><span style="color:var(--red)">Occupancy above 90%</span></div><div class="num" style="color:var(--red)">1</div></div>
+              <div class="alert-box" style="background:var(--amber-bg);"><div class="l"><b style="color:var(--amber)">🟠 Extended wait alerts</b><span style="color:var(--amber)">Sensor-flagged bays</span></div><div class="num" style="color:var(--amber)">2</div></div>
+              <div class="alert-box" style="background:var(--green-bg);margin-bottom:0;"><div class="l"><b style="color:var(--green)">🟢 Freed this hour</b><span style="color:var(--green)">Across all zones</span></div><div class="num" style="color:var(--green)">41</div></div>
+            </div>
+          </div>
+
+          <div class="section-title">Live insights</div>
+          <div class="grid3">
+            <div class="card insight-card"><span class="signal red" style="margin-top:6px"></span><p><b>Zone B critical:</b> occupancy trending toward 95% within 30 minutes. Auto-diversion to Zone C is already suggested in Decision Hub.</p></div>
+            <div class="card insight-card"><span class="signal amber" style="margin-top:6px"></span><p><b>Zone A steady rise:</b> IT-park shift changeover at 6 PM typically adds ~10% occupancy within the hour.</p></div>
+            <div class="card insight-card"><span class="signal green" style="margin-top:6px"></span><p><b>Zone C has headroom:</b> 78 free slots forecast — good candidate for weekend commuter discount routing.</p></div>
+          </div>
+
+          <div class="section-title">Hourly slot availability log</div>
+          <div class="card scroll-table">
+            <table class="data-table"><thead><tr><th>Time</th><th>Zone A free</th><th>Zone B free</th><th>Zone C free</th><th>Total occupied</th><th>Weather</th></tr></thead><tbody id="hourly-log"></tbody></table>
+          </div>
+
+          <div class="section-title">Zone occupancy right now</div>
+          <div class="gauge-row" id="gauge-row-1"></div>
+
+          <div class="section-title">Revenue &amp; vehicle mix today</div>
+          <div class="grid-2-1">
+            <div class="card scroll-table" style="max-height:none;">
+              <table class="data-table"><thead><tr><th>Zone</th><th>Vehicles today</th><th>Avg dwell time</th><th>Revenue collected</th></tr></thead>
+                <tbody>
+                  <tr><td>Zone A — Commercial</td><td>412</td><td>3h 10m</td><td>₹31,400</td></tr>
+                  <tr><td>Zone B — Shopping Mall</td><td>689</td><td>1h 45m</td><td>₹48,900</td></tr>
+                  <tr><td>Zone C — Metro Transit</td><td>1,024</td><td>7h 55m</td><td>₹22,150</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card donut-wrap" style="align-items:center;">
+              <div class="donut" style="background:conic-gradient(var(--blue-600) 0% 58%, var(--amber) 58% 84%, var(--green) 84% 100%);">
+                <div class="hole"><b>2,125</b><span>Vehicles today</span></div>
+              </div>
+              <div class="donut-legend">
+                <div class="dl-row"><span class="lbl"><span class="sw" style="background:var(--blue-600)"></span>Cars</span><b>58%</b></div>
+                <div class="dl-row"><span class="lbl"><span class="sw" style="background:var(--amber)"></span>Two-wheelers</span><b>26%</b></div>
+                <div class="dl-row"><span class="lbl"><span class="sw" style="background:var(--green)"></span>EV (charging bay)</span><b>16%</b></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-title">Sensor network status</div>
+          <div class="grid3">
+            <div class="card insight-card"><span class="signal green" style="margin-top:6px"></span><p><b>348 / 350</b> ultrasonic slot sensors reporting normally. Average heartbeat interval: 4.2 seconds.</p></div>
+            <div class="card insight-card"><span class="signal amber" style="margin-top:6px"></span><p><b>2 sensors</b> in Zone A (bay A-114, A-118) flagged for recalibration — occupancy shown from camera fallback.</p></div>
+            <div class="card insight-card"><span class="signal green" style="margin-top:6px"></span><p>Edge gateway latency averaging <b>180 ms</b> from sensor to dashboard, well within the 1s SLA.</p></div>
+          </div>
+        </section>
+
+        <!-- ================= PAGE 2 : ML PREDICTOR ================= -->
+        <section class="page" id="page-2">
+          <div class="eyebrow">Module 02</div>
+          <h1 class="mod-title">Machine Learning Congestion Forecast</h1>
+          <p class="mod-sub">A Random Forest regressor predicts next-hour occupancy from time, weather and event signals. Adjust the parameters below and re-run the model.</p>
+
+          <div class="card kpi-strip">
+            <div class="kpi"><b>0.8712</b><span>R² score (Random Forest)</span></div>
+            <div class="kpi"><b>7.89%</b><span>Mean absolute error</span></div>
+            <div class="kpi"><b>2.1M</b><span>Training rows used</span></div>
+            <div class="kpi"><b>500</b><span>Decision trees (estimators)</span></div>
+          </div>
+
+          <div class="sim-grid">
+            <div class="card sim-card">
+              <h3 style="margin-top:0;font-size:15px;">⚙️ Feature parameter simulator</h3>
+              <div class="field-sm"><label>Target parking zone</label>
+                <select id="sim-zone" onchange="recompute()">
+                  <option value="A">Zone A — Commercial (120 slots)</option>
+                  <option value="B">Zone B — Shopping Mall (80 slots)</option>
+                  <option value="C">Zone C — Metro Transit (150 slots)</option>
+                </select>
+              </div>
+              <div class="field-sm"><label>Time: <span id="sim-time-label">18:00</span></label><input type="range" id="sim-time" min="0" max="23" value="18" oninput="recompute()"></div>
+              <div class="field-sm"><label>Day category</label>
+                <select id="sim-day" onchange="recompute()">
+                  <option>Weekday Morning</option><option selected>Friday Evening</option><option>Saturday</option><option>Sunday</option>
+                </select>
+              </div>
+              <div class="field-sm"><label>Current occupancy: <span id="sim-occ-label">75%</span></label><input type="range" id="sim-occ" min="0" max="100" value="75" oninput="recompute()"></div>
+              <div class="check-row"><label><input type="checkbox" id="sim-rain" onchange="recompute()"> 🌧️ Rainy impact</label><label><input type="checkbox" id="sim-event" checked onchange="recompute()"> 🎉 Mega event surge</label></div>
+              <button class="btn-primary" onclick="recompute(true)">⚡ Execute ML next-hour prediction</button>
+            </div>
+            <div class="card sim-card">
+              <div style="display:flex;justify-content:space-between;align-items:center;"><h3 style="margin:0;font-size:15px;">Model prediction output</h3><span class="pill red" id="sim-risk">HIGH CONGESTION</span></div>
+              <div class="out-row"><div><div class="out-num" id="sim-occ-out">92.4%</div><div class="out-label">Forecasted occupancy</div></div><div><div class="out-num" style="color:var(--green)" id="sim-free-out">~6</div><div class="out-label">Estimated free slots</div></div></div>
+              <div class="reco-box" id="sim-reco">🚦 Smart decision: critical congestion risk detected. Recommend auto-routing incoming vehicles to Zone C — Metro Hub.</div>
+              <div class="meta-row"><div><span>Algorithm</span><b>RandomForest</b></div><div><span>Model R² score</span><b>0.8712</b></div><div><span>MAE error</span><b>7.89%</b></div></div>
+            </div>
+          </div>
+
+          <div class="section-title">Feature importance</div>
+          <div class="card" style="padding:24px 26px;">
+            <div class="barchart">
+              <div class="bwrap"><div class="bval">34%</div><div class="b" style="height:100%"></div><div class="blabel">Time of day</div></div>
+              <div class="bwrap"><div class="bval">24%</div><div class="b" style="height:70%"></div><div class="blabel">Historical avg</div></div>
+              <div class="bwrap"><div class="bval">19%</div><div class="b" style="height:56%"></div><div class="blabel">Day category</div></div>
+              <div class="bwrap"><div class="bval">14%</div><div class="b" style="height:41%"></div><div class="blabel">Event flag</div></div>
+              <div class="bwrap"><div class="bval">9%</div><div class="b" style="height:26%"></div><div class="blabel">Weather</div></div>
+            </div>
+          </div>
+
+          <div class="section-title">Prediction confidence by zone</div>
+          <div class="gauge-row" id="gauge-row-2"></div>
+
+          <div class="section-title">Algorithm comparison</div>
+          <div class="card" style="padding:8px 26px;">
+            <div class="algo-row"><div class="name">Random Forest <small>500 estimators, max depth 12 — in production</small></div><div class="mono">R² 0.8712</div></div>
+            <div class="algo-row"><div class="name">XGBoost <small>evaluated candidate</small></div><div class="mono">R² 0.8659</div></div>
+            <div class="algo-row"><div class="name">Linear Regression <small>baseline</small></div><div class="mono">R² 0.6104</div></div>
+            <div class="algo-row"><div class="name">Support Vector Regression <small>evaluated candidate</small></div><div class="mono">R² 0.7522</div></div>
+          </div>
+
+          <div class="section-title">How the model works</div>
+          <div class="card" style="padding:22px 26px;font-size:13.5px;color:var(--muted);line-height:1.75;">
+            <p>The predictor trains on 14 months of transaction logs (<b>parking_transactions</b> table) resampled to 15-minute intervals. Each row is engineered into features for hour-of-day, day-of-week, rolling 3-hour occupancy, local weather code, and a binary nearby-event flag pulled from the city events calendar.</p>
+            <p>500 decision trees are bagged with bootstrap sampling; the final forecast is the mean of all tree outputs, and the spread across trees builds a ±confidence band shown above. The model retrains nightly on the previous day's confirmed occupancy so drift from new traffic patterns is absorbed automatically.</p>
+          </div>
+
+          <div class="section-title">Model training &amp; validation details</div>
+          <div class="grid3">
+            <div class="card insight-card"><span class="signal blue" style="margin-top:6px"></span><p><b>Dataset:</b> 2.1M rows spanning 14 months, split 80/20 train-test with a 5-fold time-series cross-validation.</p></div>
+            <div class="card insight-card"><span class="signal blue" style="margin-top:6px"></span><p><b>Last trained:</b> today 02:00 AM. <b>Next scheduled retrain:</b> tomorrow 02:00 AM, automated via cron job.</p></div>
+            <div class="card insight-card"><span class="signal blue" style="margin-top:6px"></span><p><b>Residual error:</b> normally distributed around 0, std dev 6.4% — no systematic bias toward over- or under-prediction.</p></div>
+          </div>
+        </section>
+
+        <!-- ================= PAGE 3 : DEMAND CURVE ================= -->
+        <section class="page" id="page-3">
+          <div class="eyebrow">Module 03</div>
+          <h1 class="mod-title">24-Hour Parking Demand Curve</h1>
+          <p class="mod-sub">Aggregated historical patterns comparing Commercial, Mall and Transit zones — with the analysis layer operators use to plan staffing and pricing windows.</p>
+
+          <div class="card kpi-strip">
+            <div class="kpi"><b>08:00</b><span>Zone C morning peak</span></div>
+            <div class="kpi"><b>17:00</b><span>Zone B evening peak</span></div>
+            <div class="kpi"><b>63.7%</b><span>Avg occupancy, all zones</span></div>
+            <div class="kpi"><b>3</b><span>Zones tracked</span></div>
+          </div>
+
+          <div class="section-title">Occupancy by hour</div>
+          <div class="card" style="padding:24px 26px;position:relative;">
+            <div class="legend">
+              <div class="li"><span class="sw" style="background:var(--blue-600)"></span>Zone A · Commercial Hub</div>
+              <div class="li"><span class="sw" style="background:var(--red)"></span>Zone B · Shopping Mall</div>
+              <div class="li"><span class="sw" style="background:var(--green)"></span>Zone C · Metro Transit</div>
+            </div>
+            <svg id="demand-svg" viewBox="0 0 720 260" style="width:100%;height:280px;" preserveAspectRatio="none"></svg>
+          </div>
+
+          <div class="section-title">Reading the curve</div>
+          <div class="grid3">
+            <div class="card insight-card"><span class="signal green" style="margin-top:6px"></span><p><b>Zone C (Transit)</b> spikes hardest and earliest — commuters arrive 6–9 AM, then the lot empties through the workday, leaving capacity for a weekend discount push.</p></div>
+            <div class="card insight-card"><span class="signal blue" style="margin-top:6px"></span><p><b>Zone A (Commercial)</b> holds a wide plateau from 9 AM to 5 PM typical of a fixed office workforce, with a soft second bump at lunch.</p></div>
+            <div class="card insight-card"><span class="signal red" style="margin-top:6px"></span><p><b>Zone B (Mall)</b> builds slowly through the afternoon and peaks 4–7 PM — the window Decision Hub already flags for surge pricing.</p></div>
+          </div>
+
+          <div class="section-title">Peak-hour intensity</div>
+          <div class="gauge-row" id="gauge-row-3"></div>
+
+          <div class="section-title">Hourly occupancy data</div>
+          <div class="card scroll-table"><table class="data-table"><thead><tr><th>Hour</th><th>Zone A</th><th>Zone B</th><th>Zone C</th></tr></thead><tbody id="demand-table"></tbody></table></div>
+
+          <div class="section-title">Weekday vs weekend comparison</div>
+          <div class="grid3">
+            <div class="card insight-card"><span class="signal blue" style="margin-top:6px"></span><p><b>Zone A</b> drops ~35% on weekends since it's driven by office footfall — the clearest candidate for the weekend discount rule.</p></div>
+            <div class="card insight-card"><span class="signal red" style="margin-top:6px"></span><p><b>Zone B</b> is busier on weekends, +12% average occupancy vs weekdays, driven by family and cinema visits.</p></div>
+            <div class="card insight-card"><span class="signal green" style="margin-top:6px"></span><p><b>Zone C</b> stays fairly flat all week — commuter demand is consistent regardless of day type.</p></div>
+          </div>
+        </section>
+
+        <!-- ================= PAGE 4 : SQL ENGINE ================= -->
+        <section class="page" id="page-4">
+          <div class="eyebrow">Module 04</div>
+          <h1 class="mod-title">SQL Database &amp; Query Analytics Engine</h1>
+          <p class="mod-sub">Table schemas, indexing strategy, and the high-performance aggregate queries powering every dashboard number.</p>
+
+          <div class="card kpi-strip">
+            <div class="kpi"><b>2.1M</b><span>Rows in parking_transactions</span></div>
+            <div class="kpi"><b>38 ms</b><span>Avg indexed query time</span></div>
+            <div class="kpi"><b>82%</b><span>Query cache hit rate</span></div>
+            <div class="kpi"><b>99%</b><span>Engine uptime</span></div>
+          </div>
+
+          <div class="tabbtns">
+            <button class="active" onclick="showQuery(0,this)">Weekend aggregation</button>
+            <button onclick="showQuery(1,this)">Peak hour finder</button>
+            <button onclick="showQuery(2,this)">Free-slot trend</button>
+          </div>
+          <div class="grid2">
+            <div class="card" style="padding:20px 22px;">
+              <div class="mono" style="font-size:12px;color:var(--faint);margin-bottom:10px;">smart_parking_db.sql <span style="float:right;color:var(--blue-600);">MySQL / SQLite</span></div>
+              <div class="code-panel" id="query-code"></div>
+            </div>
+            <div class="card" style="padding:20px 22px;">
+              <div style="font-size:13px;font-weight:600;margin-bottom:12px;">Query result preview</div>
+              <table class="data-table" id="query-result"></table>
+            </div>
+          </div>
+
+          <div class="section-title">Database schema — parking_transactions</div>
+          <div class="card" style="padding:8px 26px;">
+            <div class="schema-col"><span>transaction_id</span><span class="type">BIGINT · PK</span></div>
+            <div class="schema-col"><span>zone</span><span class="type">VARCHAR(1) · indexed</span></div>
+            <div class="schema-col"><span>timestamp</span><span class="type">DATETIME · indexed</span></div>
+            <div class="schema-col"><span>occupied_slots</span><span class="type">SMALLINT</span></div>
+            <div class="schema-col"><span>free_slots</span><span class="type">SMALLINT</span></div>
+            <div class="schema-col"><span>occupancy_rate</span><span class="type">DECIMAL(5,2)</span></div>
+            <div class="schema-col"><span>is_weekend</span><span class="type">TINYINT(1)</span></div>
+            <div class="schema-col"><span>weather_code</span><span class="type">VARCHAR(12)</span></div>
+            <div class="schema-col" style="border-bottom:none;"><span>event_flag</span><span class="type">TINYINT(1)</span></div>
+          </div>
+
+          <div class="section-title">Index &amp; engine performance</div>
+          <div class="gauge-row" id="gauge-row-4"></div>
+
+          <div class="section-title">Notes</div>
+          <div class="grid3">
+            <div class="card insight-card"><span class="signal green" style="margin-top:6px"></span><p>Composite index on <b>(zone, timestamp)</b> cuts average aggregate query time from 640 ms to <b>38 ms</b> on the full 14-month table.</p></div>
+            <div class="card insight-card"><span class="signal green" style="margin-top:6px"></span><p>Table currently holds <b>2.1M rows</b>; nightly partition pruning keeps hot-query scans under 90 days of data.</p></div>
+            <div class="card insight-card"><span class="signal amber" style="margin-top:6px"></span><p>Query cache hit rate: <b>82%</b> — dashboard refresh queries are cached for 60 seconds between polls.</p></div>
+          </div>
+
+          <div class="section-title">Data pipeline overview</div>
+          <div class="card" style="padding:8px 26px;">
+            <div class="algo-row"><div class="name">1. Ingest <small>Sensor events streamed via MQTT into a raw staging table every 4 seconds</small></div><div class="mono">~350 msgs/min</div></div>
+            <div class="algo-row"><div class="name">2. Clean &amp; validate <small>Drops duplicate heartbeats, flags out-of-range sensor readings</small></div><div class="mono">99.4% pass rate</div></div>
+            <div class="algo-row"><div class="name">3. Transform <small>Aggregates to 15-min buckets, joins weather + event calendar</small></div><div class="mono">Airflow DAG, hourly</div></div>
+            <div class="algo-row"><div class="name">4. Load <small>Writes to parking_transactions for BI and ML consumption</small></div><div class="mono">MySQL primary</div></div>
+            <div class="algo-row"><div class="name">5. Backup <small>Nightly snapshot retained for 90 days, offsite copy weekly</small></div><div class="mono">Automated</div></div>
+          </div>
+        </section>
+
+        <!-- ================= PAGE 5 : DECISION HUB ================= -->
+        <section class="page" id="page-5">
+          <div class="eyebrow">Module 05</div>
+          <h1 class="mod-title">Power BI Decision Hub &amp; Dynamic Pricing</h1>
+          <p class="mod-sub">Automated surge pricing triggers, traffic diversion rules, and revenue impact tracking. Zone-specific operator consoles are in the sidebar under Zone Portals.</p>
+
+          <div class="card kpi-strip">
+            <div class="kpi"><b>2</b><span>Active pricing rules</span></div>
+            <div class="kpi"><b>+19.8%</b><span>Zone B surge revenue lift</span></div>
+            <div class="kpi"><b>₹4,11,600</b><span>Adjusted revenue, all zones this week</span></div>
+            <div class="kpi"><b>82%</b><span>Zone B surge effectiveness</span></div>
+          </div>
+
+          <div class="grid3">
+            <div class="card rule-card" style="border-color:var(--red);"><div class="rname">Dynamic surge rule #1</div><h3>Zone B price surge (+25%)</h3><p>Triggered when predicted occupancy exceeds 90% for 2 consecutive hours. Directs traffic to Zone C.</p></div>
+            <div class="card rule-card" style="border-color:var(--green);"><div class="rname">Dynamic surge rule #2</div><h3>Zone A weekend discount (-20%)</h3><p>Incentivizes commuter parking during corporate off-peak hours on Saturdays and Sundays.</p></div>
+            <div class="card rule-card" style="border-color:var(--blue-600);"><div class="rname">Data analytics KPI</div><h3>DAX congestion metric</h3><p>Evaluates rolling 3-hour occupancy vectors directly connected to Power BI DirectQuery.</p></div>
+          </div>
+
+          <div class="section-title">Power BI congestion analytics</div>
+          <div class="card" style="padding:20px 24px;">
+            <div class="pbi-toolbar"><span class="pbi-dot"></span><span class="pbi-dot"></span><span class="pbi-dot"></span><span class="pbi-title">Congestion Heatmap — Hour × Zone <span class="mono" style="color:var(--faint);font-weight:400;">DirectQuery · live</span></span></div>
+            <div class="heatmap" id="pbi-heatmap"></div>
+            <div class="heat-legend">
+              <span>Low</span>
+              <div class="heat-scale"></div>
+              <span>High congestion</span>
+            </div>
+          </div>
+
+          <div class="card" style="padding:20px 24px;margin-top:18px;">
+            <div class="pbi-toolbar"><span class="pbi-dot"></span><span class="pbi-dot"></span><span class="pbi-dot"></span><span class="pbi-title">7-Day Rolling Congestion Trend <span class="mono" style="color:var(--faint);font-weight:400;">DAX measure</span></span></div>
+            <div class="legend">
+              <div class="li"><span class="sw" style="background:var(--blue-600)"></span>Zone A</div>
+              <div class="li"><span class="sw" style="background:var(--red)"></span>Zone B</div>
+              <div class="li"><span class="sw" style="background:var(--green)"></span>Zone C</div>
+            </div>
+            <svg id="pbi-trend-svg" viewBox="0 0 720 200" style="width:100%;height:210px;" preserveAspectRatio="none"></svg>
+          </div>
+
+          <div class="section-title">Projected revenue impact this week</div>
+          <div class="card scroll-table">
+            <table class="data-table"><thead><tr><th>Zone</th><th>Rule applied</th><th>Base revenue</th><th>Adjusted revenue</th><th>Δ Impact</th></tr></thead>
+            <tbody>
+              <tr><td>Zone B</td><td>+25% surge, peak hrs</td><td>₹1,84,000</td><td>₹2,20,400</td><td style="color:var(--green)">+19.8%</td></tr>
+              <tr><td>Zone A</td><td>-20% weekend discount</td><td>₹96,500</td><td>₹88,900</td><td style="color:var(--amber)">-7.9%, +14% volume</td></tr>
+              <tr><td>Zone C</td><td>No active rule</td><td>₹1,02,300</td><td>₹1,02,300</td><td>—</td></tr>
+            </tbody></table>
+          </div>
+
+          <div class="section-title">Rule effectiveness</div>
+          <div class="gauge-row" id="gauge-row-5"></div>
+
+          <div class="section-title">Open a zone console</div>
+          <div class="grid3">
+            <div class="card insight-card" style="cursor:pointer;" onclick="showPage(6)"><span class="signal blue" style="margin-top:6px"></span><p><b>Zone A — Commercial Hub →</b> sign in on its own page for pricing history and trend charts.</p></div>
+            <div class="card insight-card" style="cursor:pointer;" onclick="showPage(7)"><span class="signal red" style="margin-top:6px"></span><p><b>Zone B — Shopping Mall →</b> sign in on its own page for pricing history and trend charts.</p></div>
+            <div class="card insight-card" style="cursor:pointer;" onclick="showPage(8)"><span class="signal green" style="margin-top:6px"></span><p><b>Zone C — Metro Transit →</b> sign in on its own page for pricing history and trend charts.</p></div>
+          </div>
+
+          <div class="section-title">Rule change audit log</div>
+          <div class="card scroll-table">
+            <table class="data-table"><thead><tr><th>Timestamp</th><th>Rule</th><th>Changed by</th><th>Action</th></tr></thead>
+              <tbody>
+                <tr><td class="mono">23 Aug, 17:10</td><td>Zone B surge +25%</td><td>admin</td><td style="color:var(--green)">Activated</td></tr>
+                <tr><td class="mono">22 Aug, 09:02</td><td>Zone A weekend discount -20%</td><td>admin</td><td style="color:var(--green)">Activated</td></tr>
+                <tr><td class="mono">19 Aug, 14:30</td><td>Zone B surge threshold</td><td>system (auto-tune)</td><td>Adjusted 85% → 90%</td></tr>
+                <tr><td class="mono">14 Aug, 11:05</td><td>Zone C diversion rule</td><td>admin</td><td style="color:var(--red)">Deactivated</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ================= PAGE 6/7/8 : ZONE PORTALS (full page login + analysis) ================= -->
+        <section class="page" id="page-6"></section>
+        <section class="page" id="page-7"></section>
+        <section class="page" id="page-8"></section>
+
+      </div>
+
+      <div class="pagination-bar">
+        <button class="pg-btn" id="prevBtn" onclick="stepPage(-1)">← Previous</button>
+        <div class="pg-dots" id="pg-dots"></div>
+        <button class="pg-btn primary" id="nextBtn" onclick="stepPage(1)">Next →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

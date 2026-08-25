@@ -1,0 +1,4 @@
+# SmartPark Intelligence
+# No third-party packages needed — app.py uses only Python's standard library
+# (http.server, socketserver, webbrowser, os).
+# Requires Python 3.7+
